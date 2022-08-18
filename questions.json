@@ -12,6 +12,12 @@
             "default": "sam-monorepo-trigger"
         },
         {
+            "question": "What is the sam application stack name for pipeline stack?",
+            "key": "pipeline_stack_name",
+            "isRequired": true,
+            "default": "sam-pipeline"
+        },
+        {
             "question": "What is the template file path?",
             "key": "sam_template",
             "default": "template.yaml"

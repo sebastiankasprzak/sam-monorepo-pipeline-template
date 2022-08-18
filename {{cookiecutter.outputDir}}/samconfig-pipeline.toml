@@ -37,8 +37,7 @@ template = "packaged-prod.yaml"
 [pipeline]
 [pipeline.deploy]
 [pipeline.deploy.parameters]
-stack_name = "{{cookiecutter.monorepo_project_subfolder}}-pipeline"
-s3_prefix = "{{cookiecutter.monorepo_project_subfolder}}-pipeline/"
+stack_name = "{{cookiecutter.pipeline_stack_name}}"
 template = "codepipeline.yaml"
 fail_on_empty_changeset = false
 resolve_s3 = true
