@@ -12,3 +12,4 @@ phases:
       - . pipeline/assume-role.sh ${ENV_PIPELINE_EXECUTION_ROLE} deploy
       - sam deploy  --config-env ${ENV_CONFIG_NAME}
                     --role-arn ${ENV_CLOUDFORMATION_EXECUTION_ROLE}
+                    --config-file samconfig-pipeline.toml

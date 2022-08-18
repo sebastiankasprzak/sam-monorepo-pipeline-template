@@ -20,11 +20,10 @@ s3_prefix = "{{cookiecutter.test_stack_name}}"
 s3_bucket = "{{cookiecutter.test_artifacts_bucket}}"
 template = "{{cookiecutter.sam_template}}"
 region = "{{cookiecutter.test_region}}"
-parameter_overrides = ""
+parameter_overrides = "{{cookiecutter.test_parameters}}"
 fail_on_empty_changeset = false
 capabilities = "CAPABILITY_IAM"
 
-[{{cookiecutter.test_stage_name}}]
 [{{cookiecutter.test_stage_name}}.deploy]
 [{{cookiecutter.test_stage_name}}.deploy.parameters]
 template = "packaged-dev.yaml"
@@ -37,12 +36,11 @@ stack_name = "{{cookiecutter.prod_stack_name}}"
 s3_prefix = "{{cookiecutter.prod_stack_name}}"
 s3_bucket = "{{cookiecutter.prod_artifacts_bucket}}"
 region = "{{cookiecutter.prod_region}}"
-parameter_overrides = ""
+parameter_overrides = "{{cookiecutter.prod_parameters}}"
 template = "template.yaml"
 fail_on_empty_changeset = false
 capabilities = "CAPABILITY_IAM"
 
-[{{cookiecutter.prod_stage_name}}]
 [{{cookiecutter.prod_stage_name}}.deploy]
 [{{cookiecutter.prod_stage_name}}.deploy.parameters]
 template = "packaged-prod.yaml"

@@ -43,6 +43,12 @@
             "default": "sam-app-test"
         },
         {
+            "key": "test_parameters",
+            "question": "What are parameter overrides for stage 1?",
+            "isRequired": true,
+            "default": ""
+        },
+        {
             "key": "test_pipeline_execution_role",
             "question": "What is the pipeline execution role ARN for stage 1?",
             "isRequired": true,
@@ -136,6 +142,12 @@
             "question": "What is the sam application stack name for stage 2?",
             "isRequired": true,
             "default": "sam-app-prod"
+        },
+        {
+            "key": "prod_parameters",
+            "question": "What are parameter overrides for stage 2?",
+            "isRequired": true,
+            "default": ""
         },
         {
             "key": "prod_pipeline_execution_role",
