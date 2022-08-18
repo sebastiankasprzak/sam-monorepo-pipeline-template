@@ -26,4 +26,4 @@ artifacts:
     - {{cookiecutter.monorepo_project_subfolder}}/packaged-dev.yaml
     - {{cookiecutter.monorepo_project_subfolder}}/packaged-prod.yaml
     - {{cookiecutter.monorepo_project_subfolder}}/pipeline/*
-    - {{cookiecutter.monorepo_project_subfolder}}/samconfig.toml
+    - {{cookiecutter.monorepo_project_subfolder}}/samconfig-pipeline.toml
