@@ -23,6 +23,9 @@ Parameters:
   MonorepoRootStack:
     Type: String
     Default: "{{cookiecutter.monorepo_trigger_stack_name}}"
+  SamTemplate:
+    Type: String
+    Default: "{{cookiecutter.sam_template}}"
   # Stage 1 Parameters
   TestConfigEnvName:
     Type: String
@@ -471,6 +474,8 @@ Resources:
         EnvironmentVariables:
           - Name: PROJECT_SUBFOLDER
             Value: !Ref ProjectSubfolder
+          - Name: SAM_TEMPLATE
+            Value: !Ref SamTemplate
           - Name: TESTING_PIPELINE_EXECUTION_ROLE
             Value: !Ref TestingPipelineExecutionRole
           - Name: TESTING_ENV_CONFIG_NAME
