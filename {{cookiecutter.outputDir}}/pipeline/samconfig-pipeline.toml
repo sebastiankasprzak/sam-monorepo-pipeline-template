@@ -13,10 +13,6 @@ region = "{{cookiecutter.testing_region}}"
 use_container = true
 template = "{{cookiecutter.sam_template}}"
 
-[{{cookiecutter.testing_stage_name}}.package]
-[{{cookiecutter.testing_stage_name}}.package.parameters]
-template = "template.yaml"
-
 [{{cookiecutter.testing_stage_name}}.deploy]
 [{{cookiecutter.testing_stage_name}}.deploy.parameters]
 template = "packaged-testing.yaml"
@@ -38,10 +34,6 @@ region = "{{cookiecutter.prod_region}}"
 [{{cookiecutter.prod_stage_name}}.build.parameters]
 use_container = true
 template = "{{cookiecutter.sam_template}}"
-
-[{{cookiecutter.prod_stage_name}}.package]
-[{{cookiecutter.prod_stage_name}}.package.parameters]
-template = "template.yaml"
 
 [{{cookiecutter.prod_stage_name}}.deploy]
 [{{cookiecutter.prod_stage_name}}.deploy.parameters]
